@@ -14,13 +14,17 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+		<script src="counter.js" type="text/javascript"/>
+		<script>
+		updateCounter();
+		</script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">Nishant Prabhudesai</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="" /></span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.png" alt="" /></span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -29,8 +33,14 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+                    <li class="nav-item">
+                        <small class="nav-link justify-content-center align-items-center">
+                            <span data-toggle="tooltip" data-placement="bottom"><i class="fas fa-eye"></i>
+                              Visits: <span id="counter"></span>
+                            </span>
+                        </small>
+                    </li>	
                 </ul>
             </div>
         </nav>
@@ -44,15 +54,16 @@
                         <span class="text-primary">Prabhudesai</span>
                     </h1>
                     <div class="subheading mb-5">
-                        3542 Berry Street · Cheyenne Wells, CO 80810 · 5138074733 ·
-                        <a href="mailto:name@email.com">prabhudesai.nishant@gmail.com</a>
+                        <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;&nbsp;San Francisco, California&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <br class="hidden-ss"><i class="fas fa-phone-alt"></i>&nbsp;&nbsp;&nbsp;+1&nbsp;(513)&nbsp;807-4733&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <br class="hidden-ss"><i class="fas fa-envelope" style="color: #10948d; text-decoration: none; background-color: transparent;"></i>&nbsp;&nbsp;&nbsp;<a href="mailto:prabhudesai.nishant@gmail.com" style="text-transform: lowercase;">prabhudesai.nishant@gmail.com</a>
                     </div>
-                    <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+                    <p class="lead mb-5">Software Engineer with hands-on experience in developing and maintaining web applications. Highly capable leader, having led multiple challenging projects to completion. Proficient in a range of modern technologies including Java, SQL, JavaScript with superior multi-tasking abilities, high adaptability and pro team player qualities.</p>
                     <div class="social-icons">
-                        <a class="social-icon" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="#"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="#"><i class="fab fa-twitter"></i></a>
-                        <a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="social-icon" href="https://www.linkedin.com/in/nishantprabhudesai/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/NishantUC" target="_blank"><i class="fab fa-github"></i></a>
+                        <!--<a class="social-icon" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a>-->
                     </div>
                 </div>
             </section>
@@ -63,35 +74,66 @@
                     <h2 class="mb-5">Experience</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Senior Web Developer</h3>
-                            <div class="subheading mb-3">Intelitec Solutions</div>
-                            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+                            <h3 class="mb-0">Application Developer</h3>
+                            <div class="subheading mb-3">Savvy Technology Solutions</div>
+                            <ul>
+							<li>Developed the customer-facing and the administrative website for the office of contract administration project of the State of Illinois using React JS</li>
+							<li>Assisted in gathering business requirements, use cases and translation of technical specifications into business process 
+                             layout for each module as per client’s requirement</li>
+							</ul>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">June 2020 - Present</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Web Developer</h3>
-                            <div class="subheading mb-3">Intelitec Solutions</div>
-                            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+                            <h3 class="mb-0">Application Development Senior Analyst</h3>
+                            <div class="subheading mb-3">Accenture</div>
+                            <ul>
+							<li>Migrated the Status Reporting application of client JP Morgan chase from .net application to Java application</li>
+							<li>Addressed reporting platform requirements using microservices architecture to design, develop highly scalable modules</li>
+							<li>Revamped the UI of the business-critical customers-facing portal using React JS</li>
+							<li>Integrated Eureka Server component to hold the client-service application information for load balancing purpose</li>
+							<li>Developed the functionality of providing the authentication and authorization of users for application modules by 
+                            implementing the JSON Web Tokens (JWT) using spring-security in Java</li>
+							<li>Eliminated data redundancy and achieved data integrity by structuring the database tables using Normalization approach</li>
+							<li>Performed unit testing of the application using Junit, Mockito and used Cucumber for acceptance testing</li>
+							<li>Coded Application Components using a Test-Driven Development (TDD) approach and followed agile methodologies</li>
+							</ul>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">December 2011 - March 2013</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">September 2018 - July 2019</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Junior Web Designer</h3>
-                            <div class="subheading mb-3">Shout! Media Productions</div>
-                            <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
+                            <h3 class="mb-0">Full Stack Developer</h3>
+                            <div class="subheading mb-3">Tata Consultancy Services</div>
+                            <ul>
+							<li>Streamlined the process for ING bank by refactoring the legacy code in Java using Spring Boot Framework that resulted in  
+                             reduction of business process time by 30%</li>
+							<li>Developed reactive, responsive, modular web application by using Spring MVC and ReactJS</li>
+							<li>Led solutions engineering and system redesigns by following Continuous Implementation Continuous Delivery (CI/CD) practices
+                            to produce high quality releases, and accelerated feature releases by 10%</li>
+							<li>Analyzed and resolved critical application issues in the production thereby improving customer satisfaction</li>
+							</ul>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">July 2010 - December 2011</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">December 2017 - August 2018</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Web Design Intern</h3>
-                            <div class="subheading mb-3">Shout! Media Productions</div>
-                            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+                            <h3 class="mb-0">Full Stack Developer</h3>
+                            <div class="subheading mb-3">Tata Consultancy Services</div>
+                            <ul>
+							<li>Developed and maintained web application for generating analytical reports for Health, Assessment, Education domains</li>
+							<li>Designed a parser using jQuery to parse the JSON response to populate HTML pages</li>
+							<li>Involved in developing generic API services to be consumed by teams belonging to various domains to generate Analytical
+                            reports of their domain</li>
+							<li>Built interactive dashboards using FusionCharts to monitor status of generated reports</li>
+							<li>Designed Ad hoc and scheduled batch jobs by using java multithreading to achieve parallel processing of data, that 
+                             resulted in reduction of time taken for generating reports by 50%</li>
+							<li>Improved user experience by converting dynamic HTML reports to PDF by using PhantomJS</li>
+							<li>Performed code coverage of the project and implemented test cases using Junit resulting in 30% less QA defects</li>
+							</ul>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2008 - June 2010</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">December 2014 - November 2017</span></div>
                     </div>
                 </div>
             </section>
@@ -102,20 +144,20 @@
                     <h2 class="mb-5">Education</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">University of Colorado Boulder</h3>
-                            <div class="subheading mb-3">Bachelor of Science</div>
-                            <div>Computer Science - Web Development Track</div>
-                            <p>GPA: 3.23</p>
+                            <h3 class="mb-0">University of Cincinnati</h3>
+                            <div class="subheading mb-3">Masters of Science</div>
+                            <div>Information Systems</div>
+                            <p>GPA: 3.92</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2006 - May 2010</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2019 - Dec 2020</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">James Buchanan High School</h3>
-                            <div class="subheading mb-3">Technology Magnet Program</div>
-                            <p>GPA: 3.56</p>
+                            <h3 class="mb-0">University of Mumbai</h3>
+                            <div class="subheading mb-3">Bachelor of Engineering</div>
+                            <p>GPA: 3.6</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2002 - May 2006</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">July 2010 - June 2014</span></div>
                     </div>
                 </div>
             </section>
@@ -123,99 +165,78 @@
             <!-- Skills-->
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-less"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
+                    <h2 class="mb-5"><i class="far fa-bookmark"></i>&nbsp;&nbsp;&nbsp;Skills</h2>
+                    <div class="subheading mb-3">Programming Languages</div>
+                    <ul class="fa-ul">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Java, JavaScript, SQL, Python, R, C#
+                        </li>
                     </ul>
-                    <div class="subheading mb-3">Workflow</div>
-                    <ul class="fa-ul mb-0">
+					<div class="subheading mb-3">Technologies</div>
+                    <ul class="fa-ul">
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile-First, Responsive Design
+                            Spring Framework, Spring Boot, JPA, Hibernate, jQuery, REST API, ASP.Net, React JS, Docker, Kubernetes, HTML, CSS, Bootstrap, XML, JSON, Junit
                         </li>
+                    </ul>
+					<div class="subheading mb-3">Databases</div>
+                    <ul class="fa-ul">
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
+                            MySQL, Oracle, MS SQL Server, IBM DB2
                         </li>
+                    </ul>
+					<div class="subheading mb-3">Cloud Services</div>
+                    <ul class="fa-ul">
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Functional Teams
+                            Amazon S3, AWS Lambda, API Gateway, DynamoDB, Kinesis, Comprehend, Elasticsearch service, Route 53
                         </li>
+                    </ul>
+                    
+                    <div class="subheading mb-3">Tools</div>
+                    <ul class="fa-ul">
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile Development & Scrum
+                            Eclipse, IntelliJ, Query Browser, Oracle SQL Developer, Maven, Visual Studio, VS Code, Postman, JIRA, Swagger, Jenkins, Jupyter notebook, SonarQube, Lombok, SVN, Git, GitHub, R Studio, Tableau, Cucumber
                         </li>
                     </ul>
                 </div>
             </section>
             <hr class="m-0" />
-            <!-- Interests-->
-            <section class="resume-section" id="interests">
+			            <!-- Projects-->
+            <section class="resume-section" id="projects">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-                    <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
+                    <h2 class="mb-5"><i class="fas fa-laptop-code"></i>&nbsp;&nbsp;&nbsp;Projects</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Cloud Portfolio</h3>
+                            <div class="subheading mb-3">AWS Lambda, Dynamo DB, CloudWatch Event, AWS CloudFormation</div>
+                            <p>
+                                <li>Used S3  to deploy a static website and Cloudfront to securely deliver the data globally with low latency</li>
+                                <li>Registered a domain with GoDaddy and create a public hosted zone in Route 53 to route the requests 	to Cloudfront</li>
+                                <li>Managed DynamoDB, Lambda and API Gateway to store, update and retrieve visitor counter</li>
+                                <li>Addressed infrastructure as code using AWS SAM and set up CI/CD pipeline using GitHub actions</li>
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2020</span></div>
+                    </div>
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Sentiment Analysis in Twitter</h3>
+                            <div class="subheading mb-3">Kinesis, Lambda, Comprehend, Elasticsearchservice</div>
+                            <p>
+                                <li>Extracted real-time data from Twitter using a python script running on EC2 with the help of libraries Tweepy and Boto3</li>
+                                <li>Used Kinesis Firehose delivery stream to capture the streaming data and AWS Lambda to call the Comprehend service for generating the sentiment information</li>
+                                <li>Loaded the transformed data into Elastic Search Cluster and visualized it using Kibana</li                                
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">April 2020</span></div>
+                    </div>
                 </div>
             </section>
-            <hr class="m-0" />
-            <!-- Awards-->
-            <section class="resume-section" id="awards">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Certifications</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Google Analytics Certified Developer
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Mobile Web Specialist - Google Certification
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2009
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            2
-                            <sup>nd</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2008
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - James Buchanan High School - Hackathon 2006
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            3
-                            <sup>rd</sup>
-                            Place - James Buchanan High School - Hackathon 2005
-                        </li>
-                    </ul>
-                </div>
-            </section>
+            
         </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
